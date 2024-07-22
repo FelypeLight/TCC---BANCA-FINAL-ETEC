@@ -1,0 +1,33 @@
+/* Estilo personalizado para o input de arquivo */
+.custom-file-input {
+    color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input::before {
+    content: 'Escolha uma imagem...';
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 6px 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Esconde o texto do input de arquivo */
+.custom-file-input {
+    color: transparent;
+}
+
+.custom-file-input:hover::before {
+    background-color: #0056b3;
+}
+.custom-file-input:active::before {
+    background-color: #00428f;
+}
+.custom-file-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
